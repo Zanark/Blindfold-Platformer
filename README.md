@@ -16,4 +16,4 @@ The main character to be saved is actually a kid who just got his new VR headset
 
 **Background and Tile Map** : [Idnustrial platformer asset pack - Just A Cookie](https://just-a-cookie.itch.io/idnustrial-platformer-asset-pack)
 
-**Chracter Assets** : [RCXNO](https://rcxno.itch.io/pixel-character-animations-and-more)
+**Character Assets** : [RCXNO](https://rcxno.itch.io/pixel-character-animations-and-more)
