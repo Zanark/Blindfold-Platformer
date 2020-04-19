@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="BlidFold Platformer"
+config/name="BlindFold Platformer"
 run/main_scene="res://Level_1.tscn"
 config/icon="res://icon.png"
 
