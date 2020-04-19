@@ -3,11 +3,11 @@ using System;
 
 public class Player : KinematicBody2D
 {
-    public const double ACCELERATION = 512;
-    public const double MAX_SPEED = 64;
-    public const double FRICTION = 0.25;
+    public const float ACCELERATION = 512;
+    public const float MAX_SPEED = 60;
+    public const float FRICTION = 0.25F;
     public const float GRAVITY = 200;
-    public const double JUMP_FORCE = 128;
+    public const float JUMP_FORCE = 128;
 
     private Vector2 motion = Vector2.Zero;
 
@@ -20,8 +20,9 @@ public class Player : KinematicBody2D
     public override void _PhysicsProcess(float delta)
     {
         motion.y += GRAVITY * delta;
+        motion.x = MAX_SPEED;
 
-        MoveAndSlide(motion);
+        motion = MoveAndSlide(motion);
         
     }
 }
