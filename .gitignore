@@ -2,6 +2,7 @@
 .import/
 export.cfg
 export_presets.cfg
+*.import
 
 # Mono-specific ignores
 .mono/
@@ -13,3 +14,9 @@ mono_crash.*.json
 
 #VSCode files
 .vscode/
+
+#temp
+GodotSrc_OLD/
+
+#releases
+*.zip

@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TileMaps/Platforms TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://NextLevel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TileMaps/Pipes TileMap.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Dragable.tscn" type="PackedScene" id=5]
+
+[node name="Level1" type="Node2D"]
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 9.31046, -7.9474 )
+
+[node name="Platforms TileMap" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 65535, 0, 196611, 131071, 0, 196612, 65536, 0, 327685, 65537, 0, 393218, 196607, 0, 65536, 131072, 0, 65538, 262143, 0, 65536, 196608, 0, 65538, 327679, 0, 65536, 262144, 0, 65538, 262162, 0, 393216, 262163, 0, 5, 393215, 0, 65536, 327680, 0, 65538, 327699, 0, 262147, 458751, 0, 65536, 393216, 0, 65538, 393235, 0, 262147, 524287, 0, 65536, 458752, 0, 65538, 458771, 0, 262147, 589823, 0, 65536, 524288, 0, 65538, 524307, 0, 262147, 655359, 0, 65536, 589824, 0, 65538, 589843, 0, 262147, 720895, 0, 65536, 655360, 0, 65538, 655379, 0, 262147, 786431, 0, 65536, 720896, 0, 65538, 720915, 0, 262147, 851966, 0, 393216, 851967, 0, 393220, 786432, 0, 131074, 786451, 0, 327683 )
+
+[node name="Pipes TileMap" parent="." instance=ExtResource( 4 )]
+
+[node name="Dragable" parent="." instance=ExtResource( 5 )]
+position = Vector2( 179.321, 101.81 )
+
+[node name="Dragable2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 263.504, 65.4066 )
+
+[node name="NextLevel" parent="." instance=ExtResource( 3 )]
+next_scene = "res://Level2.tscn"
+[connection signal="body_entered" from="Dragable" to="Player" method="_on_Dragable_body_entered"]
+[connection signal="body_entered" from="Dragable2" to="Player" method="_on_Dragable_body_entered"]
