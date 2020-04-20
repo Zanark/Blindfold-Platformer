@@ -17,3 +17,6 @@ mono_crash.*.json
 
 #temp
 GodotSrc_OLD/
+
+#releases
+*.zip
