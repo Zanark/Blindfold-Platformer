@@ -14,3 +14,6 @@ mono_crash.*.json
 
 #VSCode files
 .vscode/
+
+#temp
+GodotSrc_OLD/
