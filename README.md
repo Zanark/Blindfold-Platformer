@@ -2,7 +2,7 @@
 
 *Game entry for Ludum Dare 46*
 
-## Theme: Keep It Alive
+**Theme: Keep It Alive**
 
 ## Idea
 
@@ -14,6 +14,6 @@ The main character to be saved is actually a kid who just got his new VR headset
 
 ## Assets
 
-**Background and Tile Map** : [Idnustrial platformer asset pack - Just A Cookie](https://just-a-cookie.itch.io/idnustrial-platformer-asset-pack)
+**Background and Tile Map** : [Industrial platformer asset pack - Just A Cookie](https://just-a-cookie.itch.io/idnustrial-platformer-asset-pack)
 
 **Character Assets** : [RCXNO](https://rcxno.itch.io/pixel-character-animations-and-more)
