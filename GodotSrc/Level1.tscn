@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TileMaps/Platforms TileMap.tscn" type="PackedScene" id=2]
 [ext_resource path="res://NextLevel.tscn" type="PackedScene" id=3]
 [ext_resource path="res://TileMaps/Pipes TileMap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Dragable.tscn" type="PackedScene" id=5]
+[ext_resource path="res://DeathArea.tscn" type="PackedScene" id=6]
 
 [node name="Level1" type="Node2D"]
 __meta__ = {
@@ -20,12 +21,14 @@ tile_data = PoolIntArray( 65535, 0, 196611, 131071, 0, 196612, 65536, 0, 327685,
 [node name="Pipes TileMap" parent="." instance=ExtResource( 4 )]
 
 [node name="Dragable" parent="." instance=ExtResource( 5 )]
-position = Vector2( 179.321, 101.81 )
+position = Vector2( 134.955, 80.7644 )
 
 [node name="Dragable2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 263.504, 65.4066 )
+position = Vector2( 225.395, 38.1043 )
 
 [node name="NextLevel" parent="." instance=ExtResource( 3 )]
 next_scene = "res://Level2.tscn"
+
+[node name="DeathArea" parent="." instance=ExtResource( 6 )]
 [connection signal="body_entered" from="Dragable" to="Player" method="_on_Dragable_body_entered"]
 [connection signal="body_entered" from="Dragable2" to="Player" method="_on_Dragable_body_entered"]

@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="BlindFold Platformer"
-run/main_scene="res://Level1.tscn"
+run/main_scene="res://TitleScreen.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -31,4 +31,5 @@ window/stretch/aspect="keep"
 
 [rendering]
 
+environment/default_clear_color=Color( 0.254902, 0.254902, 0.254902, 1 )
 environment/default_environment="res://default_env.tres"
