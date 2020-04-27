@@ -1,5 +1,6 @@
 extends Area2D
 
+onready var animationPlayer = $AnimationPlayer
 onready var dragMouse = false
 onready var GRAVITY = Vector2(0, 100)  # gravity force
 onready var VELOCITY = Vector2()  # the area's velocity
@@ -31,11 +32,16 @@ func _process(delta):
 	var bodies = get_overlapping_bodies()
 	for body in bodies:
 		if body.name == "Player":
-			free()
+			animationPlayer.play("break")
+			yield(get_tree().create_timer(.8), "timeout")
+			queue_free()
+			
 		else :
 			VELOCITY = Vector2.ZERO
 			on_floor = true
 
 
 func _on_Dragable_area_exited():
+	animationPlayer.play("break")
 	hide()
+	queue_free()

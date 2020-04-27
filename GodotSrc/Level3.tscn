@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://NextLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://DeathArea.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Dragable.tscn" type="PackedScene" id=5]
+[ext_resource path="res://TileMaps/Platforms TileMap.tscn" type="PackedScene" id=6]
+
+[node name="Level3" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource( 4 )]
+position = Vector2( 158.857, 90.7982 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 108 )
+
+[node name="Platforms TileMap" parent="." instance=ExtResource( 6 )]
+position = Vector2( 158.857, 90.7982 )
+tile_data = PoolIntArray( -131063, 0, 196611, -65527, 0, 262147, 9, 0, 262147, 65545, 0, 262147, 196597, 0, 393216, 196598, 0, 393217, 196599, 0, 5, 131081, 0, 262147, 262135, 0, 327683, 262143, 0, 393216, 196608, 0, 393218, 196617, 0, 327683 )
+
+[node name="DeathArea" parent="." instance=ExtResource( 3 )]
+
+[node name="Dragable" parent="." instance=ExtResource( 5 )]
+position = Vector2( 160, 131 )
+
+[node name="NextLevel" parent="." instance=ExtResource( 1 )]
+position = Vector2( 312, 51 )

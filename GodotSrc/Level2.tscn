@@ -16,7 +16,7 @@ position = Vector2( 8, 16 )
 
 [node name="NextLevel" parent="." instance=ExtResource( 3 )]
 position = Vector2( 312, 104 )
-next_scene = "res://Level1.tscn"
+next_scene = "res://Level3.tscn"
 
 [node name="Dragable" parent="." instance=ExtResource( 4 )]
 position = Vector2( 184, 120 )
