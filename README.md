@@ -6,7 +6,7 @@
 
 ## Idea
 
-To make a platformer where the player has to save a character from falling to their death
+To make a platformer where the player has to save a character from falling to their death.
 
 ## Story
 
