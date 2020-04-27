@@ -24,7 +24,7 @@ func _process(delta):
 		VELOCITY = Vector2.ZERO
 
 	if !on_floor:
-		VELOCITY += GRAVITY * delta
+		VELOCITY += GRAVITY * delta * 10
 		set_position(get_position() + VELOCITY * delta)
 	
 	
