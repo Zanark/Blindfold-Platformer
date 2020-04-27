@@ -25,7 +25,7 @@ func _process(delta):
 		VELOCITY = Vector2.ZERO
 
 	if !on_floor:
-		VELOCITY += GRAVITY * delta * 10
+		VELOCITY += GRAVITY * delta * 2
 		set_position(get_position() + VELOCITY * delta)
 	
 	
@@ -33,7 +33,7 @@ func _process(delta):
 	for body in bodies:
 		if body.name == "Player":
 			animationPlayer.play("break")
-			yield(get_tree().create_timer(.8), "timeout")
+			yield(get_tree().create_timer(.5), "timeout")
 			queue_free()
 			
 		else :

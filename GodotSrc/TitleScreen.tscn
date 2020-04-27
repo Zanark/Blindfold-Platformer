@@ -106,7 +106,7 @@ valign = 2
 position = Vector2( 205.276, 23.8061 )
 frames = SubResource( 3 )
 animation = "idle"
-frame = 2
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
